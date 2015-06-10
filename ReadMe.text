@@ -1,0 +1,23 @@
+作者；陈佳杰 jeffrey chen
+时间：2015年6月9日
+
+node网站MVC业务流程：
+	0.启动服务端服务器index.js
+	1.客户端发http请求
+	2.server.js接受对应的请求，然后跳转到route.js这个路由程序
+	3.route.js路由程序根据请求的参数把请求分配至对应的Controller
+	4.Controller模块负责和Model模块交互，从对应的Model模块中获取对应的数据（Model模块会和数据库交互来获取数据）
+	5.Controller模块获取完数据以后，把数据转换成客户端想要的格式	
+	6.(Controller最好分为页面初始化的Controller和ajax专用的Controller)
+		6.1 页面初始化的Controller：Controller处理好数据后，将数据传递到对应的View模块，View模块负责组织界面，完成数据和html字符串的拼接，然后把最后的html结果通过response这个Node对象返回给客户端.
+		6.2 Ajax的Controller：在Controller中直接用response这个Node对象来把数据传递给客户端
+
+
+
+模块划分：
+	静态数据：存放页面的统一错误提示，图片，文本等静态资源
+	Model：负责和数据库交互，获取想要的数据
+	Controller：负责和Model交互来获取对应数据并处理数据，最后把数据发送给View
+	View: 从Controller那边获取处理好的数据以后，根据对应的模板来拼接HTML字符串，最后把html返回给客户端
+	Route：luyou路由
+	Server：客户端请求处理程序

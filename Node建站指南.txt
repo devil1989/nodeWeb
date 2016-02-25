@@ -1,0 +1,26 @@
+
+//后端建站用到的东西
+npm：包管理工具
+NodeJS：包装过的js后端语言
+Express：Node框架
+MongoDB：数据库（也可以用MySQL）
+Nginx：服务器（处理静态文件，虽然node可以处理静态文件，但是没有nginx性能好）
+
+//前端打包压缩工具（后端不需要打包，因为客户端请求的时候，都是前端文件）
+Grunt/Webpack：
+
+//前端css
+lessCss：css预处理语言
+
+//前端js
+require：模块加载器
+zepto：js框架（可以把dom和event功能单独抽离出来）
+doT/mustache:模板引擎，今后妈妈再也不用担心我拼html了
+
+
+
+
+
+
+//因为Node适合高并发请求，但不适合做大量计算的处理，所以还需要一个纯后端用于计算，后端计算用java
+阿里：Nginx + Node.js + Java做前后端分离

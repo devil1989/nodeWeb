@@ -1,0 +1,31 @@
+//先看这些接口，最常用
+Events：事件
+HTTP：
+Modules：
+NET：网络
+Path：处理路径
+URL：url相关接口
+
+
+//次要看
+Debugger：调试
+DNS：域名解析
+console:打log
+Buffer:二进制处理
+fs：文件系统（获取和处理本地文件）
+global：全局对象
+UDP：类似http和https协议接口
+HTTPS：
+OS：返回系统相关信息
+子进程：处理进程
+Procress：进程
+TLS/SSL 是一种公钥/私钥架构
+Query Strings：序列化对象
+
+
+
+//最后看
+集群：充分利用多核cpu的优势(不稳定)
+Crypto:提供在HTTPS或HTTP连接中封装安全凭证的方法.不稳定)
+Domain：域（不稳定）
+流 (Stream)：虽然不稳定，建议看下

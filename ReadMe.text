@@ -19,5 +19,5 @@ node网站MVC业务流程：
 	Model：负责和数据库交互，获取想要的数据
 	Controller：负责和Model交互来获取对应数据并处理数据，最后把数据发送给View
 	View: 从Controller那边获取处理好的数据以后，根据对应的模板来拼接HTML字符串，最后把html返回给客户端
-	Route：luyou路由
+	Route：路由
 	Server：客户端请求处理程序
